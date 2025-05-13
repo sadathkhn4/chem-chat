@@ -128,16 +128,17 @@ Example:
 
 ## Folder Structure
 
-chat-to-log-app/
-│
-├── node-server/ # Node.js frontend and API proxy
-│ ├── public/ # Static files (HTML, CSS, JS)
-│ ├── server.js # Node.js server to handle requests
-│ └── package.json # Node.js dependencies
-│
-└── python-backend/ # Python Flask backend
-├── server.py # Flask app to handle chat logic
-└── requirements.txt # Python dependencies
+chat-to-log-app/  
+│  
+├── app/ # frontend and Node.js API proxy  
+│ ├── public/ # Static files (HTML, CSS, JS)  
+│ ├── server.js # Node.js server to handle requests  
+│ └── package.json # Node.js dependencies  
+│  
+└── backend/ # Python Flask backend  
+| ├── logs/ # Stores logs of the conversations  
+| ├── server.py # Flask app to handle chat logic  
+| └── requirements.txt # Python dependencies  
 
 
 ---
